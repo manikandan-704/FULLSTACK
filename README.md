@@ -24,5 +24,13 @@ performed object programs
       merge two objects
       object methode
 
+# js-practice 
+performed async programs
+   ## concepts
+       async function
+       await promise
+       errorhandeling in await 
+         
+
        
   
