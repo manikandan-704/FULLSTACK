@@ -32,3 +32,6 @@ console.log(arrow(4));
 
 // }
 // out();
+
+let multiple= n =>  n*n     
+console.log(multiple(2));

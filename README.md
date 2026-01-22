@@ -14,5 +14,15 @@ performed function programs
    ## concept
       normal functions
       arrow functions
+
+# Objects/Functions
+performed object programs
+   ## concepts
+      shallow copy/deep copy
+      loop through object
+      access/delete/update object
+      merge two objects
+      object methode
+
        
   
