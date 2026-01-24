@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
+        div {
             background-color: gray;
             padding: 20px;
             width: 300px;
@@ -14,60 +15,63 @@
         }
     </style>
 </head>
+
 <body>
     <div>
-    <input type="text">
-    <button onclick="removChild()">Submit</button>
-    <ol>
-        <li>content1</li>
-        <li>content2</li>
-        <li>content3</li>
-        <li>content4</li>
-    </ol>
+        <input type="text">
+        <button onclick="removChild()">Submit</button>
+        <ol>
+            <li>content1</li>
+            <li>content2</li>
+            <li>content3</li>
+            <li>content4</li>
+        </ol>
     </div>
     <script>
 
 
-let change = document.querySelector("ol");
-let input = document.querySelector("input");
-let item = document.createElement("li");
-let body = document.querySelector("div");
-// function removeList() {
-//     if(input.value === "clear"){
-//      change.remove();
-//     }
-//     else{
-//         alert("Please enter 'clear' to remove the list");
-//     }
-// }
-// function addList() {
-//     if(input.value === "content5"){
-//         item.textContent=input.value;
-//         change.appendChild(item);
-//     }
-// }
-// function insertList() {
-//     if(input.value === "content0"){
-//         item.innerHTML=input.value;
-//       change.insertBefore(item,change.firstChild);
-// }
-// }
-// function replaceList() {
-//       item.innerHTML=input.value;
-//       change.replaceChild(item,change.children[0]);
-// }
-function removChild() {
-    if(input.value===""){
-        alert("Please enter some text to replace the first item");
-    }
-    item.innerHTML=input.value;
-    change.removeChild(change.children[0]);
-    change.replaceChild(item,change.children[0]);
-}
+        let change = document.querySelector("ol");
+        let input = document.querySelector("input");
+        let item = document.createElement("li");
+        let body = document.querySelector("div");
 
-// function cSs(){
-//    body .style.backgroundColor="yellow";
-// }
+        function removeList() {
+            if (input.value === "clear") {
+                change.remove();
+            }
+            else {
+                alert("Please enter 'clear' to remove the list");
+            }
+        }
+        function addList() {
+            if (input.value === "content5") {
+                item.textContent = input.value;
+                change.appendChild(item);
+            }
+        }
+        function insertList() {
+            if (input.value === "content0") {
+                item.innerHTML = input.value;
+                change.insertBefore(item, change.firstChild);
+            }
+        }
+        function replaceList() {
+            item.innerHTML = input.value;
+            change.replaceChild(item, change.children[0]);
+        }
+        function removChild() {
+            if (input.value === "") {
+                alert("Please enter some text to replace the first item");
+            }
+            item.innerHTML = input.value;
+            change.removeChild(change.children[0]);
+            change.replaceChild(item, change.children[0]);
+        }
+
+        function cSs() {
+            body.style.backgroundColor = "yellow";
+        } 
     </script>
 </body>
+
 </html>
