@@ -33,6 +33,8 @@ body{
 
 #start-screen h1{
     margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: bolder;
     color: orangered;
 }
 #start-screen p{
@@ -124,4 +126,24 @@ body{
     padding: 1rem;
     border-radius: 10px;
     border: solid 0px;
+}
+@media(max-width:500px) 
+{
+    .container{
+        max-width: 400px;
+        min-width: 300px;
+    }
+    .screen {
+        padding: 1rem;
+    }
+    #start-screen h1,#result-screen h1{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    #start-screen .start-btn,#result-screen button{
+        padding: 10px;
+    }
+    .ans-btn{
+        padding: 10px;
+    }
 }
