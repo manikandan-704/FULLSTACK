@@ -1,4 +1,4 @@
-import  './App.css'
+
 import List from './components/List.jsx'
 import Search from './components/Search'
 function App() {

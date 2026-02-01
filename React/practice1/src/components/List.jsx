@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import Button from '@mui/material/Button';
 const List = () => {
   const [color, setColor] = useState("white");
   function Change() {
@@ -10,7 +10,7 @@ const List = () => {
   },[color]);
   return (
       <div>
-        <button onClick={Change}>Change Background color</button>
+        <Button color="secondary" onClick={Change}>Change color</Button>
       </div>
   );
 };
