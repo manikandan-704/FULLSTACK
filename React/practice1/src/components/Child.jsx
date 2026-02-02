@@ -1,31 +1,17 @@
 import Button from "@mui/material/Button";
-import { Stack, Box } from "@chakra-ui/react";
 
 function Child({ data, name, role }) {
   return (
     <>
-      {/* <Button onClick={()=>{data("hi all")}} variant="contained" endIcon={<SendIcon />}>
-         Send
-      </Button> */}
+      <h4>{name} {role}</h4>
       <Button
         onClick={() => {
-          data("Welcome");
+          data(`Welcome I'm ${name} ${role}`);
         }}
-        variant="outlined"
-        color="error"
+        variant="contained"
       >
-        Error
+        Click!!
       </Button>
-
-      <Stack direction="row" h="20" spacing="4">
-        <Box bg="blue.500" color="white" p="4">
-          Box 1
-        </Box>
-
-        <Box bg="green.500" color="white" p="4">
-          Box 2
-        </Box>
-      </Stack>
     </>
   );
 }
