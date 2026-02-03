@@ -1,4 +1,4 @@
-# Frontend
+## Frontend
 Initialized the Git
 
 # DOM manipulation
