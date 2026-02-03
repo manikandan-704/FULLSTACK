@@ -124,3 +124,23 @@ node_modules/
 
 # environment variables
 .env
+// Source - https://stackoverflow.com/a/60220966
+// Posted by sahil khaire
+// Retrieved 2026-02-03, License - CC BY-SA 4.0
+
+##react
+.idea/
+.vscode/
+node_modules/
+build
+.DS_Store
+*.tgz
+my-app*
+template/src/__tests__/__snapshots__/
+lerna-debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/.changelog
+.npm/
+yarn.lock
