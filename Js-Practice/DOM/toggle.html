@@ -5,11 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(58, 58, 58);
+             color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+           
+        }
+        body.active{
+            background-color: white;
+            color: black;
+           
+        }
     </style>
 </head>
 <body>
-    <button class="dark active"  onclick="ChangeTheme()">Dark</button>
+    <div>
+        <button class="dark active"  onclick="ChangeTheme()">Dark</button>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex distinctio laborum nobis excepturi in mollitia dignissimos corrupti, natus eum vel cupiditate est incidunt adipisci maiores libero labore. Esse, libero nisi.</p>
+    </div>
+    
     <script>
+        const change=document.querySelector("button");
+       function ChangeTheme(){
+            document.body.classList.toggle("active")
+        }
     </script>
 </body>
 </html>
