@@ -11,7 +11,7 @@ function Handeling(success) {
 }
 let Solve= async () => {             //errors are handeled by try and catch
     try{
-        let correct= await Handeling(false);
+        let correct= await Handeling(true);
         console.log(correct);
     }
     catch(message){
